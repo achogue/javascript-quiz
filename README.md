@@ -1,3 +1,5 @@
+Test your Javascript knowledge with this timed multiple choice quiz!
+
 User Story
 
 AS A coding boot camp student
