@@ -14,13 +14,14 @@
 
     <div class="container">
 
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <button type="button" id="startBtn" class="btn btn-primary btn-lg" style="margin: 400px" onclick="startQuiz()">Start Quiz!</button>
+        </div>
+
         <div class="row">
             <div class="col-sm">
                 <div id="quiz" style="display: none" class="panel">
                     <div class="row">
-                        <div style="font-weight:bold; font-size: larger;" class="result">
-
-                        </div>
                     </div>
                     <div class="row">
                         <h3 class="question-container" id="question">
@@ -30,36 +31,34 @@
 
                     <div class="option-container">
                         <div class="row">
-                            <button style="font-weight:bold; font-size: larger;" class="btn btn-info" onclick=""
-                                id="op1">option1</button>
+                            <button style="font-weight:bold; font-size: larger;" class="btn btn-info" id="op1"
+                                onclick="selectedBtn(this.id)">option1</button>
                         </div>
 
                         <div class="row">
-                            <button style="font-weight:bold; font-size: larger;" class="btn btn-info"
-                                id="op2">option2</button>
+                            <button style="font-weight:bold; font-size: larger;" class="btn btn-info" id="op2"
+                                onclick="selectedBtn(this.id)">option2</button>
                         </div>
 
                         <div class="row">
-                            <button style="font-weight:bold; font-size: larger;" class="btn btn-info"
-                                id="op3">option3</button>
+                            <button style="font-weight:bold; font-size: larger;" class="btn btn-info" id="op3"
+                                onclick="selectedBtn(this.id)">option3</button>
                         </div>
 
                         <div class="row">
-                            <button style="font-weight:bold; font-size: larger;" class="btn btn-info"
-                                id="op4">option4</button>
+                            <button style="font-weight:bold; font-size: larger;" class="btn btn-info" id="op4"
+                                onclick="selectedBtn(this.id)">option4</button>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-sm">
-                            <button id="evaluate" type="button" style="width: 100%"
-                                class="btn btn-primary btn-sm">Evaluate</button>
-                        </div>
-                        <div class="col-sm">
-                            <button id="next" type="button" style="width: 100%"
-                                class="btn btn-secondary btn-sm">Next</button>
+                            <button id="next" type="button" style="width: 100%" class="btn btn-secondary btn-sm" 
+                                onclick="nextQuestion()">Next</button>
                         </div>
                     </div>
+                    
+
                     <div class="row">
                         <div class="col-sm">Timer:</div>
                         <div class="col-sm">
@@ -78,51 +77,53 @@
             </div>
         </div>
 
-            <div class="min-vh-100 d-flex align-items-center justify-content-center">
-                <button type="button" id="startBtn" class="btn btn-primary btn-lg">Start!</button>
-            </div>
-            <div class="row">
-                <div class="col-sm">
-                    <div id="results" hidden class="panel">
+        <div style="font-weight:bold; font-size: larger;" class="result"></div>
 
-                        <div class="row">
-                            <div style="font-weight:bold; font-size: larger;">
-                                All Done!
-                            </div>
-                        </div>
+        <div class="row">
+            <div class="col-sm">
+                <div id="results" hidden class="panel">
 
-
-
-                        <div class="row">
-
-                            <div class="col-sm">Your Score:</div>
-                            <div class="col-sm">
-                                <h4 id="correctAnswersResult"></h4>
-                            </div>
-
-
-                        </div>
-                        <div class="row">
-                            <div class="col-sm">Your Initials:</div>
-                            <div class="col-sm">
-                                <input name="myInitials" placeholder="Your Initials"/>
-                            </div>
-                            <div class="col-sm">
-                                <button type="button" id="submit" class="btn btn-primary btn-lg">Submit</button>
-                            </div>
+                    <div class="row">
+                        <div style="font-weight:bold; font-size: larger;">
+                            View Your Score!
                         </div>
                     </div>
+
+
+
+                    <div class="row">
+
+                        <div class="col-sm">Your Score:</div>
+                        <div class="col-sm">
+                            <h4 id="correctAnswersResult"></h4>
+                        </div>
+
+                        <div id="initials">
+                            <form class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="inputInitials" class="form-label">Enter Your Initials:</label>
+                                    <input type="email" class="form-control" id="inputEmail4">
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
-
         </div>
+    </div>
+
+    </div>
 
 
 
 
 
-        <script src="assets/script.js">
-        </script>
+    <script src="assets/script.js">
+    </script>
 </body>
 
 </html>
