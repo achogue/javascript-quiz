@@ -56,10 +56,10 @@ var questionsArr = [
         question: 'Which of the following methods can be used to display data in some form using Javascript?',
 
         answers: [
-            { text: 'document.write()', isCorrect: true },
+            { text: 'document.write()', isCorrect: false },
             { text: 'console.log()', isCorrect: false },
             { text: 'window.alert()', isCorrect: false },
-            { text: 'All of the above', isCorrect: false },
+            { text: 'All of the above', isCorrect: true },
         ],
 
 
