@@ -1,4 +1,4 @@
-Test your Javascript knowledge with this timed multiple choice quiz!
+Test your Javascript knowledge with this timed multiple choice quiz! If you get a question wrong, the timer decreases by 2 seconds so choose wisely!
 
 https://achogue.github.io/javascript-quiz/
 
